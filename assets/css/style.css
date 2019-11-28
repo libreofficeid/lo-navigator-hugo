@@ -498,7 +498,7 @@ a:focus, a:hover {
 
 .navigation .navbar-nav > li > a:hover, .navigation .navbar-nav > li > a:active, .navigation .navbar-nav > li > a:focus {
   background: none;
-  color: #f0326b;
+  color: #FDE9A9;
 }
 
 .navigation .navbar-toggler {
@@ -1509,10 +1509,22 @@ a:focus, a:hover {
 .post-item {
   background: #fff;
   margin-bottom: 40px;
+  max-height: 60vw;
+  padding-bottom: auto;
 }
-
-.post-item .post-thumb {
-  margin-right: 10px;
+.post-thumb{    
+    max-width: auto; 
+    max-height: 20vw; 
+    background-size: cover; 
+    background-position: center;
+}
+.read-more{
+    position: relative;
+    float: bottom;
+}
+.post-item .post-thumb .read-more{
+    display:inline-block;
+    margin-right: 10px;
 }
 
 .post-item .post-thumb img {
