@@ -1513,7 +1513,6 @@ a:focus, a:hover {
   padding-bottom: auto;
 }
 .post-thumb{    
-    max-width: auto; 
     max-height: 20vw; 
     background-size: cover; 
     background-position: center;
@@ -1528,7 +1527,10 @@ a:focus, a:hover {
 }
 
 .post-item .post-thumb img {
-  height: auto;
+  max-height: 20vw;
+}
+.post-item .btn-readmore{
+    margin-bottom: 0px;
 }
 
 .post-item .post-title {
@@ -1556,6 +1558,7 @@ a:focus, a:hover {
 .post-item .post-content p {
   color: #757575;
   margin: 10px 0;
+  max-height: 5vw;
 }
 
 .post-item .btn-main, .post-item .btn-main-sm {
