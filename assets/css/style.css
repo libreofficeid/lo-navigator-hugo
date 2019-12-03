@@ -57,7 +57,7 @@ a:focus, a:hover {
   background-image: linear-gradient(100deg, #0369A3, #1C99E0);
   color: #fff;
   display: inline-block;
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: 1px;
   padding: 10px 40px;
   text-transform: uppercase;
@@ -477,8 +477,8 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-nav > li > a {
-  color: #92E285;
-  font-size: 15px;
+  color: rgba(255,255,255,.75);
+  font-size: 20px;
   line-height: 26px;
   padding: 20px 15px !important;
   transition: .2s ease-in-out 0s;
@@ -498,7 +498,7 @@ a:focus, a:hover {
 
 .navigation .navbar-nav > li > a:hover, .navigation .navbar-nav > li > a:active, .navigation .navbar-nav > li > a:focus {
   background: none;
-  color: #FDE9A9;
+  color: #fff;
 }
 
 .navigation .navbar-toggler {
@@ -628,12 +628,13 @@ a:focus, a:hover {
 }
 
 .hero-area .block h2 {
-  font-size: 48px;
+  font-size: 60px;
   margin-bottom: 20px;
 }
 
 .hero-area .block p {
   color: #fff;
+  font-size: 30px;
   margin-bottom: 20px;
 }
 
