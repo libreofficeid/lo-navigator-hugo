@@ -29,11 +29,11 @@
                     <div class="post-meta">
                         <ul class="list-inline">
                             <li class="list-inline-item">
-                                <span>By</span>
+                                <span>oleh</span>
                                 {{ .Params.author }}
                             </li>
                             <li class="list-inline-item">
-                                <span>at</span>
+                                <span>pada</span>
                                 <span>{{ .Date.Format .Site.Params.dateFormat }}</span>
                             </li>
                         </ul>
@@ -43,12 +43,17 @@
                     </div>
                 </div>
                 <div class="post-item btn-readmore">
-                        <a class="btn btn-main" href="{{ .Permalink }}">Baca Selengkapnya</a>
+                        <a class="btn btn-main" href="{{ .Permalink }}">Selengkapnya</a>
                 </div>
             </article>
             {{ "<!-- /single blog post -->" | safeHTML }}
             {{ end }}
         </div>
+        </div>
+    </div>
+    <div class="title text-center">
+        <div class="btn-item btn-more">
+            <a href="{{ .Permalink }}">Warta Lainnya</a>
     </div>
 </section>
 {{ "<!-- Blog Section End -->" | safeHTML }}
