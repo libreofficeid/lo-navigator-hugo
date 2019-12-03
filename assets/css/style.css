@@ -37,6 +37,7 @@ figure {
 
 a {
   transition: all .3s ease-in 0s;
+  color: #17a204;
 }
 
 iframe {
@@ -49,12 +50,12 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-  color: #f0326b;
+  color: #17a204;
 }
 
 .btn-main, .btn-main-sm {
   background-color: #21D6BF;
-  background-image: linear-gradient(100deg, #0369A3, #1C99E0);
+  background-image: linear-gradient(100deg, #17a20f, #1bbe12);
   color: #fff;
   display: inline-block;
   font-size: 20px;
@@ -67,7 +68,7 @@ a:focus, a:hover {
 
 .btn-main:hover, .btn-main-sm:hover {
   color: #fff;
-  background-image: linear-gradient(100deg, #1C99E0, #63BBEE);
+  background-image: linear-gradient(100deg, #1db116, #50f048);
 }
 
 .btn-main-sm {
@@ -150,7 +151,7 @@ a:focus, a:hover {
 }
 
 #preloader {
-  background: #f0326b;
+  background: #17a204;
   height: 100%;
   opacity: 1;
   filter: alpha(opacity=100);
@@ -401,7 +402,7 @@ a:focus, a:hover {
 }
 
 .header-bradcrumb a:hover {
-  color: #f0326b;
+  color: #17a204;
 }
 
 .slick-slide {
@@ -464,7 +465,7 @@ a:focus, a:hover {
 }
 
 .single-page-header .breadcrumb li a {
-  color: #f0326b;
+  color: #17a204;
 }
 
 .navigation {
@@ -524,7 +525,7 @@ a:focus, a:hover {
 
 .navigation .dropdown .dropdown-item:hover {
   background: transparent;
-  color: #f0326b;
+  color: #17a204;
 }
 
 .navigation .dropdown .dropdown-menu {
@@ -683,7 +684,7 @@ a:focus, a:hover {
   transition: transform 300ms ease;
   transition: transform 300ms ease, -webkit-transform 300ms ease;
   background: #fff;
-  color: #f0326b;
+  color: #17a204;
   line-height: 80px;
   font-size: 30px;
   margin-left: 5px;
@@ -755,7 +756,7 @@ a:focus, a:hover {
 
 .about h4 {
   font-size: 14px;
-  color: #f0326b;
+  color: #17a204;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -914,7 +915,7 @@ a:focus, a:hover {
   height: 30px;
   width: 30px;
   text-align: center;
-  color: #f0326b;
+  color: #17a204;
 }
 
 .social-icon li a i {
@@ -1005,7 +1006,7 @@ a:focus, a:hover {
 .counters-item i {
   font-size: 40px;
   display: inline-block;
-  color: #f0326b;
+  color: #17a204;
 }
 
 .counters-item h3 {
@@ -1099,12 +1100,12 @@ a:focus, a:hover {
 }
 
 .portfolio-filter button:hover {
-  border-bottom: 2px solid #f0326b;
+  border-bottom: 2px solid #17a204;
   color: #000;
 }
 
 .portfolio-filter button.active {
-  border-bottom: 2px solid #f0326b;
+  border-bottom: 2px solid #17a204;
   color: #000;
 }
 
@@ -1171,7 +1172,7 @@ a:focus, a:hover {
 }
 
 .portfolio-block .caption .search-icon {
-  background: #f0326b;
+  background: #17a204;
   color: #fff;
   display: inline-block;
   padding: 4px 13px;
@@ -1200,7 +1201,7 @@ a:focus, a:hover {
 
 .services .service-block i {
   font-size: 40px;
-  color: #f0326b;
+  color: #17a204;
   background: linear-gradient(100deg, #63BBEE, #0369A3);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1269,7 +1270,7 @@ a:focus, a:hover {
 }
 
 .service-list .block {
-  background: #f0326b;
+  background: #17a204;
   color: #fff;
   padding: 30px;
 }
@@ -1293,7 +1294,7 @@ a:focus, a:hover {
 }
 .client-service-list li i{
   margin-right: 10px;
-  color: #f0326b;
+  color: #17a204;
 }
 
 /*=================================================================
@@ -1316,7 +1317,7 @@ a:focus, a:hover {
 }
 
 .team-skills .progress-block .progress .progress-bar {
-  background: #f0326b;
+  background: #17a204;
   box-shadow: none;
 }
 
@@ -1361,7 +1362,7 @@ a:focus, a:hover {
 }
 
 .development-steps .step-2 {
-  background-color: #f0326b;
+  background-color: #17a204;
 }
 
 .development-steps .step-2 h4, .development-steps .step-2 p {
@@ -1437,7 +1438,7 @@ a:focus, a:hover {
 }
 
 .team-member .member-content ul li a i {
-  color: #f0326b;
+  color: #17a204;
   background: linear-gradient(100deg, #63BBEE, #0369A3);
   background-clip: text;
   -webkit-background-clip: text;
@@ -1462,7 +1463,7 @@ a:focus, a:hover {
   Testimonial section
 ==================================================================*/
 .testimonial {
-  background: #f0326b;
+  background: #17a204;
   position: relative;
 }
 
@@ -1513,6 +1514,14 @@ a:focus, a:hover {
   max-height: 60vw;
   padding-bottom: auto;
 }
+
+.btn-item {
+  background: #fff;
+  margin-bottom: 40px;
+  max-height: 50vw;
+  padding-bottom: auto;
+}
+
 .post-thumb{    
     max-height: 20vw; 
     background-size: cover; 
@@ -1532,6 +1541,18 @@ a:focus, a:hover {
 }
 .post-item .btn-readmore{
     margin-bottom: 0px;
+}
+
+.btn-more{
+  background-color: #FFFFFF00;
+  color: #17a20f;
+  display: inline-block;
+  font-size: 15px;
+  border: 2px solid #16a20fb4;
+  letter-spacing: 1px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .post-item .post-title {
@@ -1622,7 +1643,7 @@ a:focus, a:hover {
 }
 
 .next-prev a:hover {
-  color: #f0326b;
+  color: #17a204;
 }
 
 .next-prev .prev-post i {
@@ -1645,7 +1666,7 @@ a:focus, a:hover {
 }
 
 .social-profile ul li a i:hover {
-  color: #f0326b;
+  color: #17a204;
 }
 
 .comments-section {
@@ -1693,7 +1714,7 @@ a:focus, a:hover {
 }
 
 .comment-wrap .media .media-heading a {
-  color: #f0326b;
+  color: #17a204;
   font-size: 13px;
 }
 
@@ -1718,7 +1739,7 @@ a:focus, a:hover {
 
 .comment-reply-form input:focus, .comment-reply-form textarea:focus {
   box-shadow: none;
-  border: 1px solid #f0326b;
+  border: 1px solid #17a204;
 }
 
 .comment-reply-form textarea, .comment-reply-form .btn-main, .comment-reply-form .btn-main-sm {
@@ -1739,7 +1760,7 @@ a:focus, a:hover {
   color: #cccccc;
 }
 .pagination li.active a{
-  color: #f0326b;
+  color: #17a204;
   font-weight: 600;
 }
 
@@ -1819,7 +1840,7 @@ a:focus, a:hover {
 }
 
 .footer-bottom a {
-  color: #f0326b;
+  color: #17a204;
 }
 
 .subscribe-form .form-control {
