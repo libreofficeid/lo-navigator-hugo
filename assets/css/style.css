@@ -1206,9 +1206,9 @@ a:focus, a:hover {
 }
 
 .services .service-block i {
-  font-size: 40px;
+  font-size: 30px;
   color: #17a204;
-  background: linear-gradient(100deg, #63BBEE, #0369A3);
+  background: linear-gradient(100deg, #17a204, #118302);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
