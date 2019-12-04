@@ -4,15 +4,15 @@
 <div class="hero-images" style="background-image:url(/images/back.jpg);"></div>
     <div class="container">
         <div class="row">
-            <!--<div class="col-md-6">
+            <div class="col-md-6">
                 <div class="video-player">
                     <img class="img-fluid rounded" src="{{ with .Site.Params.hero.videoThumb }}{{.| absURL }}{{ end }}" alt="video-thumb">
                     <a class="play-icon" href="javascript:void(0)">
                         <i class="tf-ion-play" data-video="{{ with .Site.Params.hero.videoURL }}{{.}}{{ end }}?autoplay=1"></i>
                     </a>
                 </div>
-            </div>-->
-            <div class="col-md-12">
+            </div>
+            <div class="col-md-6">
                 <div class="block">
                     {{ with .Site.Params.hero.heading }}
                         <h2>{{ . }}</h2>
