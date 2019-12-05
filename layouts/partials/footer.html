@@ -7,36 +7,35 @@
                     <h3>{{ .Site.Params.footerAboutTitle }}</h3>
                     {{ with .Site.Params.footerDescription }}<p>{{ . }}</p>{{ end }}
                 </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
-                    <h3>{{ .Site.Params.footerServiceTitle }}</h3>
-                    <ul>
-                        <li>
-                            <a href="https://lumbung.libreOffice.id">Lumbung LibreOffice Indonesia</a>
-                            <a href="https://glosarium.libreOffice.id">Glosarium LibreOffice Indonesia</a>
-                            <a href="https://github.com/libreofficeid">Dokumentasi Proyek</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-4 col-lg-4">
+                <div class="col-sm-4 col-md-4 col-lg-4 center">
                     <h3>{{ .Site.Params.footerQuicklinkTitle }}</h3>
                     <ul>
-                        {{ range .Site.Menus.quicklink }}
                         <li>
                             <a href="https://www.libreoffice.org">LibreOffice</a>
                             <a href="https://www.documentfoundation.org/">The Document Foundation</a>
                         </li>
-                        {{ end }}
                     </ul>
                 </div>
-<!--                <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>{{ .Site.Params.footerSubscribeTitle }}</h3>
-                    <form class="subscribe-form">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                        </div>
-                        <button type="submit" class="btn btn-main-sm">Berlangganan Sekarang</button>
-                    </form>
-                </div>-->
+                <div class="col-sm-4 col-md-4 col-lg-4 right">
+                    <h3>{{ .Site.Params.footerSocmedTitle }}</h3>
+                    <ul class="list-inline social-icon">
+                        <li class="list-inline-item">
+                            <a href="https://t.me/LibreOfficeID"><i class="fab fa-telegram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/libreofficeid/"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://web.facebook.com/LibreOffice-Indonesia-951280308379734/"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.youtube.com/channel/UCBgSzRofowjVhsK-D92TFmg"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

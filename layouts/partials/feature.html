@@ -1,4 +1,4 @@
-{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $data := index .Site.Data }}
 {{ with $data.feature }}
     {{ if .enable }}
     {{ "<!-- Feature Section Start -->" | safeHTML }}
