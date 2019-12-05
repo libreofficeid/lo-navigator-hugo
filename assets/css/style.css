@@ -7,7 +7,7 @@ body {
 
 p {
   font-family: "Titillium Web", sans-serif;
-  color: #9a9a9a;
+  color: #707070;
   font-size: 15px;
 }
 
@@ -396,7 +396,7 @@ a:focus, a:hover {
 }
 
 .header-bradcrumb a, .header-bradcrumb .active {
-  color: #cfcfcf;
+  color: #fff;
   font-weight: 200;
   font-family: "Titillium Web", sans-serif;
 }
@@ -419,7 +419,7 @@ a:focus, a:hover {
 }
 
 .commonTab .nav-tabs .nav-item .nav-link {
-  background: #f9f9f9;
+  background: #fff;
   color: #fff;
   text-transform: capitalize;
   border-radius: 0;
@@ -470,7 +470,7 @@ a:focus, a:hover {
 
 .navigation {
   transition: .3s all;
-  background: #17a204;
+  background: #128604;
 }
 
 .navigation .navbar-nav > li.active a {
@@ -478,7 +478,7 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-nav > li > a {
-  color: rgba(255,255,255,.75);
+  color: rgba(255,255,255);
   font-size: 20px;
   line-height: 26px;
   padding: 20px 15px !important;
@@ -1227,7 +1227,7 @@ a:focus, a:hover {
 }
 
 .services .service-block p {
-  color: #777;
+  color: #575757;
 }
 
 /*=================================================================
@@ -1558,14 +1558,18 @@ a:focus, a:hover {
 
 .btn-more{
   background-color: #FFFFFF00;
-  color: #17a20f;
+  color: #128604;
   display: inline-block;
   font-size: 15px;
-  border: 2px solid #16a20fb4;
+  border: 2px solid #128604;
   letter-spacing: 1px;
   padding: 10px 40px;
   text-transform: uppercase;
   border-radius: 4px;
+}
+
+.btn-more a {
+  color: #128604;
 }
 
 .post-item .post-title {
@@ -1582,7 +1586,7 @@ a:focus, a:hover {
 
 .post-item .post-meta {
   font-size: 14px;
-  color: #888;
+  color: rgb(36, 35, 35);
 }
 
 .post-item .post-meta a {
