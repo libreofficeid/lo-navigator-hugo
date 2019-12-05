@@ -8,7 +8,7 @@
                 <div class="video-player">
                     <img class="img-fluid rounded" src="{{ with .Site.Params.hero.videoThumb }}{{.| absURL }}{{ end }}" alt="video-thumb">
                     <a class="play-icon" href="javascript:void(0)">
-                        <i class="tf-ion-play" data-video="{{ with .Site.Params.hero.videoURL }}{{.}}{{ end }}?autoplay=1"></i>
+                        <i class="tf-ion-play" data-video="{{ with .Site.Params.hero.videoURL }}{{.}}{{ end }}?autoplay=1" aria-label="Youtube Channel"></i>
                     </a>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     {{ if .Site.Params.hero.button }}
                         <ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
                             <li class="list-inline-item">
-                                <a href="{{ with .Site.Params.hero.btnURL }}{{.}}{{ end }}" target="_blank" class="btn btn-main">{{ with .Site.Params.hero.btnText }}{{.}}{{ end }}</a>
+                                <a href="{{ with .Site.Params.hero.btnURL }}{{.}}{{ end }}" target="_blank" rel="noreferrer" class="btn btn-main">{{ with .Site.Params.hero.btnText }}{{.}}{{ end }}</a>
                             </li>
                         </ul>
                     {{ end }}
