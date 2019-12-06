@@ -1523,8 +1523,8 @@ a:focus, a:hover {
 ==================================================================*/
 .post-item {
   background: #fff;
-  margin-bottom: 40px;
-  max-height: 60vw;
+  margin-bottom: 10px;
+  /*max-height: 60vw;*/
   padding-bottom: auto;
 }
 
@@ -1536,7 +1536,7 @@ a:focus, a:hover {
 }
 
 .post-thumb{    
-    max-height: 20vw; 
+    /*max-height: 20vw; */
     background-size: cover; 
     background-position: center;
 }
@@ -1550,7 +1550,7 @@ a:focus, a:hover {
 }
 
 .post-item .post-thumb img {
-  max-height: 20vw;
+  /*max-height: 20vw;*/
 }
 .post-item .btn-readmore{
     margin-bottom: 0px;
@@ -1604,7 +1604,7 @@ a:focus, a:hover {
   font-size: 12px;
   margin-top: 10px;
   padding: 8px 20px;
-  margin: 15px 0;
+  margin: 25px 0;
 }
 
 /*=================================================================
