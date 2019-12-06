@@ -27,8 +27,9 @@ h1, h2, h3, h4, h5, h6 {
 
 ol, ul {
   margin: 0;
-  padding: 0;
-  list-style: none;
+  padding-left: 10;
+  content: "•";
+  color: "green"
 }
 
 figure {
@@ -89,7 +90,26 @@ a:focus, a:hover {
 .btn-transparent:hover {
   color: #fff;
 }
-
+code,
+.code,
+pre {
+  font-family: 'Roboto Mono';
+  background: $char;
+  color: $lightGray;
+  font-size: 12px;
+  padding: 0;
+  padding: 5px;
+  &:before {
+    display: block;
+    width: calc(100% + 10px);
+    margin-top: -10px;
+    margin-left: -10px;
+    padding: 5px;
+    text-transform: uppercase;
+    content: attr(data-lang);
+    background: $medBlue;
+  }
+}
 .mt-10 {
   margin-top: 10px;
 }
