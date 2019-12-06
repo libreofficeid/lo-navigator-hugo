@@ -14,10 +14,11 @@
         <div class="row">
             {{ range first 3 .Site.RegularPages}}
             {{ "<!-- single blog post -->" | safeHTML }}
+            {{ $contenturl := .Permalink }}
             <article class="col-12 col-md-4">
                 <div class="post-item">
                     <div class="post-thumb">
-                        <img class="img-fluid shadow rounded" src="{{ .Params.image | absURL }}" alt="Gambar mungkin gagal dimuat">
+                        <img class="img-fluid shadow rounded" src="{{ $contenturl }}{{ .Params.image }}" alt="Gambar mungkin gagal dimuat">
                     </div>
                 </div>
                 <div class="post-item">

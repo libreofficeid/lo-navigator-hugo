@@ -4,7 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <img src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" class="w-100 mb-3" alt="Post-Image">
+                {{ $contenturl := .Permalink }}
+                <img src="{{ with .Params.image }}{{ $contenturl }}{{ . }}{{ end }}" class="w-100 mb-3" alt="Post-Image">
                 <h2>{{ .Title }}</h2>
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
