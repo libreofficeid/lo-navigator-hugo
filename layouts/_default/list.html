@@ -8,10 +8,11 @@
         <div class="row">
             {{ range (.Paginator 6).Pages }}
             {{ "<!-- single blog post -->" | safeHTML }}
+            {{ $contenturl := .Permalink }}
             <article class="col-12 col-md-4">
                 <div class="post-item">
                     <div class="post-thumb">
-                        <img class="img-fluid shadow rounded" src="{{ with .Params.image }}{{ . | absURL }}{{ end }}" alt="Gambar mungkin gagal dimuat">
+                        <img class="img-fluid shadow rounded" src="{{ with .Params.image }}{{ $contenturl }}{{ . }}{{ end }}" alt="Gambar mungkin gagal dimuat">
                     </div>
                     <div class="post-title">
                         <h3 class="mt-0">
