@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
 body {
   line-height: 1.4;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Inter UI", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 p {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Inter UI", sans-serif;
   color: #707070;
   font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Inter UI", sans-serif;
   font-weight: 600;
 }
 
@@ -27,9 +27,19 @@ h1, h2, h3, h4, h5, h6 {
 
 ol, ul {
   margin: 0;
-  padding-left: 10;
-  content: "•";
-  color: "green"
+  padding-left: 10;  
+}
+
+li {
+    list-style-type: none;
+    position: relative;    
+}
+
+li::before {
+    content: '\2022';     
+    position: absolute;
+    left: -0.8em;         
+    font-size: 0.8em;      
 }
 
 figure {
