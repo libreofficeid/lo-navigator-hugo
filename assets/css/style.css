@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ol, ul {
   margin: 0;
-  padding-left: 10;  
+  padding-left: 5em;  
 }
 
 li {
@@ -35,13 +35,22 @@ li {
     position: relative;    
 }
 
-li::before {
-    content: '\2022';     
+.content-single ul li::before{
+    content: '\2022';   
     position: absolute;
-    left: -0.8em;         
-    font-size: 0.8em;      
+    left: -1.5em;         
+    font-size: 0.8em; 
 }
 
+.content-single ol li{
+    list-style-type: number;   
+}
+
+.content-single ol li::before{
+    position: absolute;
+    left: -1.7em;         
+    font-size: 0.5em; 
+}
 figure {
   margin: 0;
 }
