@@ -10,17 +10,21 @@
                 <div class="post-meta mb-5">
                     <ul class="list-inline">
                         <li class="list-inline-item">
-                            <span>By</span>
-                            {{ .Params.author }}
+                            <span>oleh</span>
+                            <a href="https://t.me/libreofficeid/" aria-label="Telegram LibreOffice">{{ .Params.author }}</a>
                         </li>
                         <li class="list-inline-item">
-                            <span>at</span>
+                            <span>pada</span>
                             <span>{{ .Date.Format .Site.Params.dateFormat }}</span>
                         </li>
                     </ul>
                 </div>
                 <div class="content-single">
                     {{ .Content }}
+                    <hr>
+                    <div class="kategori">
+                    Kategori: <a href="../../kategori/{{ .Params.kategori }}" aria-label="kategori" >{{ .Params.kategori }}</a>
+                    </div>
                 </div>
             </div>
         </div>
