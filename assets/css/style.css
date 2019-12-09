@@ -120,25 +120,8 @@ a:focus, a:hover {
 .btn-transparent:hover {
   color: #fff;
 }
-code,
-.code,
-pre {
-  font-family: 'Roboto Mono';
-  background: $char;
-  color: $lightGray;
-  font-size: 12px;
-  padding: 0;
-  padding: 5px;
-  &:before {
-    display: block;
-    width: calc(100% + 10px);
-    margin-top: -10px;
-    margin-left: -10px;
-    padding: 5px;
-    text-transform: uppercase;
-    content: attr(data-lang);
-    background: $medBlue;
-  }
+pre, code {
+  padding: 5px 10px 5px 20px;
 }
 .mt-10 {
   margin-top: 10px;
