@@ -8,20 +8,20 @@
 <title>{{ with .Title }}{{ . }}{{ else }}{{ with .Site.Params.title }}{{ . }}{{ end }}{{ end }}</title>
 <!-- Primary Meta Tags -->
 <meta name="title" content="{{ with .Title }}{{ . }}{{ else }}{{ with .Site.Params.title }}{{ . }}{{ end }}{{ end }}">
-
+{{ $contenturl := .Permalink }}
 <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://libreoffice.id/">
+<meta property="og:type" content="{{ if eq .Type "posts" }}article{{else}}website{{end}}">
+<meta property="og:url" content="{{ $contenturl }}">
 <meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ with .Site.Params.title }}{{ . }}{{ end }}{{ end }}">
 <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-<meta property="og:image" content="{{ with .Params.Image }}{{ . | absURL }}{{ else }}{{ "images/og-image.png" | absURL  }}{{ end }}">
+<meta property="og:image" content="{{ with .Params.Image }}{{ $contenturl  }}{{ . }}{{ else }}{{ "images/og-image.png" | absURL  }}{{ end }}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://libreoffice.id/">
+<meta property="twitter:url" content="{{ $contenturl }}">
 <meta property="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ with .Site.Params.title }}{{ . }}{{ end }}{{ end }}">
 <meta property="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-<meta property="twitter:image" content="{{ with .Params.Image }}{{ . | absURL }}{{ else }}{{ "images/og-image.png" | absURL  }}{{ end }}">
+<meta property="twitter:image" content="{{ with .Params.Image }}{{ $contenturl  }}{{ . }}{{ else }}{{ "images/og-image.png" | absURL  }}{{ end }}">
 
 
 {{ "<!-- Mobile Specific Meta -->" | safeHTML }}
