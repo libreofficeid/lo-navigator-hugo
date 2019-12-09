@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<section class="blog-single section">
+    <div class="container">
+        <div id="tags-archives" class="container">
+    <h3>Daftar Tagar</h3>
+    <section>
+      {{ range .Data.Terms.ByCount }}
+        <a class="btn btn-outline-success" href="#{{ .Name | urlize }}-list" data-tag="{{ .Name | lower }}">
+          {{ .Name }} <span class="badge badge-danger">{{ .Pages | len }}</span>
+        </a>
+      {{ end }}
+    </section>
+    <hr>
+    <section class="boxes">
+      {{ range .Data.Terms.ByCount }}
+        <div id="{{ .Name | urlize }}-list" class="archive box" data-tag="{{ .Name | lower }}">
+          <h4 class="badge badge-success">
+            <a class="link-unstyled text-white" href="{{ .Name | urlize }}">
+              {{ .Name }} ({{ .Pages | len }})
+            </a>
+          </h4>
+          <ul class="archive-posts">
+            {{ range .Pages.ByDate }}
+              <li class="archive-post">
+                <a class="archive-post-title text-success" href="{{ .Permalink }}">
+                  {{ .Title }}
+                </a>
+                <span class="archive-post-date"> - {{ .Date.Day }} {{ index $.Site.Data.bulan (printf "%d" .Date.Month) | humanize }} {{ .Date.Year }}</span>
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </section>
+  </div>
+    </div>
+</section>
+
+{{ end }}
