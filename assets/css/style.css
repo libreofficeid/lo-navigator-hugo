@@ -1561,6 +1561,10 @@ pre, code {
   padding-bottom: auto;
 }
 
+.content-single img {
+  max-width: 100%;
+}
+
 .btn-item {
   background: #fff;
   margin-bottom: 40px;
