@@ -2,26 +2,26 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-{{ with .Site.Params.author }} <meta name="author" content="{{ . }}">{{ end }}
+{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 {{ hugo.Generator }}
 
-<title>{{ .Site.Title }}</title>
+<title>{{ with .Title }}{{ . }}{{ else }}{{ with .Site.Params.title }}{{ . }}{{ end }}{{ end }}</title>
 <!-- Primary Meta Tags -->
-<meta name="title" content="Komunitas LibreOffice ID">
+<meta name="title" content="{{ with .Title }}{{ . }}{{ else }}{{ with .Site.Params.title }}{{ . }}{{ end }}{{ end }}">
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://libreoffice.id/">
-<meta property="og:title" content="Komunitas LibreOffice ID">
-<meta property="og:description" content="Komunitas LibreOffice Indonesia adalah komunitas nonprofit yang mewadahi para pengguna, pegiat, dan kontributor LibreOffice di Indonesia.">
-<meta property="og:image" content="https://libreofficeid.github.io/images/og-image.png">
+<meta property="og:title" content="{{ with .Title }}{{ . }}{{ else }}{{ with .Site.Params.title }}{{ . }}{{ end }}{{ end }}">
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta property="og:image" content="{{ with .Params.Image }}{{ . | absURL }}{{ else }}{{ "images/og-image.png" | absURL  }}{{ end }}">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://libreoffice.id/">
-<meta property="twitter:title" content="Komunitas LibreOffice ID">
-<meta property="twitter:description" content="Komunitas LibreOffice Indonesia adalah komunitas nonprofit yang mewadahi para pengguna, pegiat, dan kontributor LibreOffice di Indonesia.">
-<meta property="twitter:image" content="https://libreofficeid.github.io/images/og-image.png">
+<meta property="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ with .Site.Params.title }}{{ . }}{{ end }}{{ end }}">
+<meta property="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+<meta property="twitter:image" content="{{ with .Params.Image }}{{ . | absURL }}{{ else }}{{ "images/og-image.png" | absURL  }}{{ end }}">
 
 
 {{ "<!-- Mobile Specific Meta -->" | safeHTML }}
