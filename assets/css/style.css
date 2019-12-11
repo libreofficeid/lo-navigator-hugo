@@ -1,18 +1,19 @@
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700");
+@import url('https://rsms.me/inter/inter.css');
+html,body { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html,body { font-family: 'Inter var', sans-serif; }
+}
 body {
   line-height: 1.4;
-  font-family: "Inter UI", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 p {
-  font-family: "Inter UI", sans-serif;
   color: #707070;
   font-size: 15px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Inter UI", sans-serif;
   font-weight: 600;
 }
 
@@ -512,7 +513,6 @@ pre, code {
 
 .navigation .navbar-nav > li > a {
   color: rgba(255,255,255);
-  font-size: 20px;
   line-height: 26px;
   padding: 20px 15px !important;
   transition: .2s ease-in-out 0s;
@@ -554,7 +554,10 @@ pre, code {
 .navigation .dropdown .dropdown-item {
   padding: 8px 15px;
   color: rgba(255,255,255,.75);
-  font-size: 15px;
+}
+
+.navigation .dropdown .dropdown-item::before {
+    content: "> ";
 }
 
 .navigation .dropdown .dropdown-item:hover {
@@ -564,32 +567,12 @@ pre, code {
 
 .navigation .dropdown .dropdown-header{
     color: #CCF4C6;
-    font-size: 20px;
+    font-weight:800;
 }
 
 .navigation .dropdown .dropdown-menu {
-  /*border-radius: 0;*/
-  -webkit-transform-origin: top;
-          transform-origin: top;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
+  border-radius: 0;
   background-color: #17a204;
-  display: block;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out,-webkit-transform 0.3s;
-  transition: transform 0.3s,opacity 0.3s ease-in-out;
-  transition: transform 0.3s,opacity 0.3s ease-in-out,-webkit-transform 0.3s;
-}
-
-.navigation .dropdown:hover .dropdown-menu {
-  transition: opacity 0.3s ease-in-out,-webkit-transform 0.3s;
-  transition: transform 0.3s,opacity 0.3s ease-in-out;
-  transition: transform 0.3s,opacity 0.3s ease-in-out,-webkit-transform 0.3s;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  opacity: 1;
 }
 
 .navbar-brand {
