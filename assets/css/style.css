@@ -552,13 +552,13 @@ pre, code {
 
 
 .navigation .dropdown .dropdown-item {
-  padding: 8px 15px;
+  padding: 8px 50px;
   color: rgba(255,255,255,.75);
 }
 
-.navigation .dropdown .dropdown-item::before {
-    content: "> ";
-}
+/*.navigation .dropdown .dropdown-item::before {
+    content: " ";
+}*/
 
 .navigation .dropdown .dropdown-item:hover {
   background: transparent;
